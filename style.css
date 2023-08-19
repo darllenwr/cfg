@@ -1,112 +1,443 @@
-/* class to style social media icons: Facebook, Instagram etc. Have also put it on the 5G logo for now*/
-
-.social-media-icon {
-  width: 50px;
-  border-radius: 17%;
+  /* For extra-large screens with a minimum width of 1200px */
+  @media only screen and (min-width: 1200px) {
+    /* Your CSS rules for extra-large screens here */
   
+/*nav bar styling*/
+
+.navbar.navbar-expand-lg.bg-body-tertiary{
+    background-color: #white;
+}
+.navbar-brand{
+    padding-left: 200px;
+    font-weight: bold;
+    font-family: 'Titan One', cursive;
+}
+.social-media-icon{
+    height: 100px;
+    width: 100px;
+}
+h2{
+    font-family: 'Titan One', cursive;
+    font-size: 250px;
+    text-align: left;
+}
+.navbar-nav.me-auto.mb-2.mb-lg-0{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+    color: #C42847;
+    font-size: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
 }
 
-/* Formatting for the social media icons in the footer */
-
-.social-media-icon-footer {
-  width: 50px;
-  margin-right: 2rem;
-  margin-left: 2rem;
-  border-radius: 17%;
+.nav-item{
+    padding-left: 100px;
 }
 
-@media only screen and (max-width: 500px) {
-  .social-media-icon-footer {
-margin-left: 1rem;
-    margin-right: 1rem;
+/*homepage welcome banner styling*/
+.flex-container-homepage-header1{
+    display:flex;
+    flex-direction: row;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    background-image: url('homepage_banner1.jpg');
+    background-attachment:inherit;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: relative;
+    height: 2000px;
+}
+.welcome-title{
+    padding-top: 500px;
+    padding-left: 220px;
+    padding-right: 220px;
+    font-size: 200px;
+    color: #C42847;
+    font-family: 'Titan One', cursive;
+}
+
+.strapline{
+    padding-top: 500px;
+    padding-left: 220px;
+    padding-right: 220px;
+    font-size: 100px;
+    color:#C42847;
+    font-family: 'Titan One', cursive;
+}
+.order-button{
+    margin-top: 50px;
+    margin-left: 220px;
+    border-radius: 100px;
+    border-color: #C42847;
+    background: #C42847;
+    width: 500px;
+    height: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+/*three containers aligned to navigation*/
+
+.section1_wrapper{
+    background-image: url(section1_background_img.jpg);
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    height: 1800px;
+    margin-bottom: 250px;
+}
+.row.row-cols-1.row-cols-xxl-3.gy-4.text-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.border_image1{
+    width: 50px;
+    height:500px;
+}
+.col.themed-grid-col-1{
+    background-color: #7FD1B9;
+    margin-top: 375px;
+    height: 1200px;
+    width: 800px;
+    border-radius: 25px;
+}
+
+.col.themed-grid-col-2{
+    background-color: #FFABCF;
+    margin-top: 375px;
+    height: 1200px;
+    width: 800px;
+    border-radius: 25px;
+}
+
+.col.themed-grid-col-3{
+    background-color: #FBD87F;
+    margin-top: 375px;
+    height: 1200px;
+    width: 800px;
+    border-radius: 25px;
+}
+
+.col1_header{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;    
+    justify-content: center;
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: 'Titan One', cursive;
+    font-size: 80px;
+    color: white;
+    flex: auto;   
+}
+
+.col_text{
+    font-size: 40px;
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+.bi.bi-arrow-right-circle-fill{
+    padding-top: 50px;
+    height: 200px;
+    width: 200px;
+    color: white;
+}
+
+/* Video style  */
+
+.section2_wrapper{
+    background-color:#FBD87F;
+    height: 3000px;
+    margin-bottom: 250px;
+}
+.section2_header{
+    text-align: center;
+    font-size: 100px;
+    padding-top: 200px;
+    color: teal;
+}
+.homepage_video1{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+/*Bootsrap grid styling*/
+.grid-container{
+    padding-top: 50px;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-bottom: 150px;
+}
+.col-xl-4.themed-grid-col-1{
+    height: 1250px;
+    flex: auto;
+}
+
+.col-xl-4.themed-grid-col-2{
+    background-image: url(homepage_grid_image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1250px;
+    flex: auto;
+}
+
+.col-xl-4.themed-grid-col-3{
+    height: 1250px;
+    flex: auto;
+}
+
+.col-xl-4.themed-grid-col-4{
+    background-image: url(homepage_grid_image2.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 1250px;
+    flex: auto;
+}
+
+.col-xl-4.themed-grid-col-5{
+    height: 1250px;
+    flex: auto;
+}
+
+.col-xl-4.themed-grid-col-6{
+    background-image: url(homepage_grid_image3.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 1250px;
+    flex: auto;
+}
+.grid_text_default1{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;    
+    justify-content: center;
+    padding-top: 500px;
+    font-size: 100px;
+    flex: auto;
+    color: #7FD1B9;
+    font-family: 'Titan One', cursive;
+
+}
+.grid_text_default2{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;    
+    justify-content: center;
+    padding-top: 500px;
+    font-size: 100px;
+    flex: auto;
+    color: #FFABCF;
+    font-family: 'Titan One', cursive;
+}
+.grid_text_default3{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;    
+    justify-content: center;
+    padding-top: 500px;
+    font-size: 100px;
+    flex: auto;
+    color: #FBD87F;
+    font-family: 'Titan One', cursive;
+}
+
+/* Footer styling*/
+
+.footer_container{
+    background-color: #7FD1B9;
+}
+.footer_links_container{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer_nav_text{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.social-media-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.bi.bi-instagram{
+    height: 50px;
+    width: 50px;
+    color: black;
+    margin: 20px;
+}
+
+.bi.bi-facebook{
+    height: 50px;
+    width: 50px;
+    color: black;
+    margin: 20px;
+}
+
+.bi.bi-youtube{
+    height: 50px;
+    width: 50px;
+    color: black;
+    margin: 20px;
+}
+
+.copyright_text{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+/* For small screens/mobile with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+
+/*nav bar styling MOBILE*/
+.navbar-brand{
+    font-size: 100px;
+    font-weight: bold;
+}
+.navbar-nav.me-auto.mb-2.mb-lg-0{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*homepage welcome banner styling*/
+.flex-container-homepage-header1{
+    display:flex;
+    flex-direction: row;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    background-image: url('ice_cream_banner1.avif');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: inherit;
+    height: 900px;
+}
+.welcome-title{
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.button_container{
+    margin-top: 175px;
+}
+.order-button{
+    border-radius: 25px;
+    border-color: black;
+    background: black;
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+/*Bootsrap grid styling*/
+.grid-container{
+    padding: 0%;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.col-md-4.themed-grid-col-1{
+    background-image: url(homepage_grid_image2.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    flex: auto;
+}
+
+.col-md-4.themed-grid-col-2{
+    background-color:rgb(166,232,224);
+    height: 500px;
+    flex: auto;
+}
+
+.col-md-4.themed-grid-col-3{
+    background-image: url(homepage_grid_image4.avif);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    flex: auto;
+}
+
+.col-md-4.themed-grid-col-4{
+    background-color:rgb(245,171,178);
+    height: 500px;
+    flex: auto;
+}
+
+.col-md-4.themed-grid-col-5{
+    background-image: url(homepage_grid_image13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    flex: auto;
+}
+
+.col-md-4.themed-grid-col-6{
+    background-image: url(homepage_grid_image12.avif);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    flex: auto;
   }
 }
-
-/*sets font and colour of links in the navigation bar  */
-
-.nav-link {
-  font-family: "Inter", Verdana;
-  color: black;
-}
-
-/*There's no H1 on the wireframe. (You can only have one H1 per page). I've been taught that every page needs a H1. The class below hides the H1, though it still takes up space on the page.  */
-
-.h1-hidden {
-  visibility: none;
-  font-size: 0.1rem;
-}
-
-/* Feedback block background format */
-.feedback {
-  background-color: #EAC9E4;
-  font-family: "Inter", Verdana;
-  margin-left: auto;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-}
-
-/*Mobile view of Feedback column. Margins to increase gap between vertically stacked columns, and padding to make the div cut-off less abrupt*/
-
-@media only screen and (max-width: 500px) {
-  .feedback {
-   background-color: #EAC9E4;
-   font-family: "Inter", Verdana;
-  margin-bottom: 3rem;
-    padding-bottom: 2rem;
+  
+  /* For medium screens/tablets with a minimum width of 768px and a maximum width of 991px */
+ @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Your CSS rules for medium screens here */
+  
   }
-}
-
-/* The button class on the default form is blue with white text. This overwrights the formatting. I tried to add it as a class, but when that had no effect I changed it to ID.*/
-
-#btn-submit {
-  font-family: "Inter", Verdana;
-  font-size: 1.2rem;
-  font-weight: 2;
-  border-color: black;
-  background-color: black;
-  color: white;
-}
-
-/* Contact block background format */
-.contact {
-  background-color: #333333;
-  color: white;
-  font-family: "Inter", Verdana;
-  margin-right: auto;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-  text-indent: 1rem;
-}
-
-/* For mobile view of the 'Contact Us' column  */
-@media only screen and (max-width: 500px) {
-  .contact {
-  background-color: #333333;
-  color: white;
-  font-family: "Inter", Verdana;
-  margin-top: 2rem;
-  padding-bottom: 2rem;
+  /* For large screens/laptops with a minimum width of 992px and a maximum width of 1199px */
+ @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Your CSS rules for large screens here */
+ 
   }
-}
-
-/*This removes the bullet points from a bullet pointed list. I've done this entirely for style reasons. Previously, I'd used <br> to separate the lines but this didn't work well combined with 'text-indent' – very uneven. It's a bad list because it's not semantic HTML i.e. it's not really a list. When I have more time, I'll create a specific 'p' style to make the lines closer together.  */
-
-.bad-list {
-  list-style-type: none;
-}
-
-
-/* class to p elements to make them bigger and more striking where headings aren't appropriate */
-
-.call-to-action {
-  font-size: 1.5rem;
-  font-family: "Inter", Verdana;
-}
-
-/* Background colour and text colour for the footer */
-
-.footer-format {
-  background-color: black;
-  color: white;
-  width: 100%;
-}
+  
