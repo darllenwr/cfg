@@ -49,8 +49,8 @@
 </nav>
  <div class="container-fluid">
    
-<!-- I tried using the proper hexcode from the wireframe #A6E8E0 but couldn't get anything to show. This is hopefully just temporary!  -->
-<div class="bg-success-subtle" style="height:30px">
+<!-- I tried using the proper hexcode from the wireframe #A6E8E0 but couldn't get anything to show. This is hopefully just temporary! Update: corrected. -->
+<div style="height:30px" class="green">
    </div>
   </div>
   </header>
@@ -63,10 +63,11 @@
     
     <div class="container mt-5">
       <div class="row">
-        <div class="col col-xl-5 col-lg-5 col-md-5 col-sm-10 col-xs-10 feedback">
+        <div class="col col-xl-5 col-lg-5 col-md-10 col-sm-10 col-xs-10 feedback">
     <form name="icecreamForm">
-      <h2>Feedback</h2>
+      <h2 class="space-below-title">Feedback</h2>
   <div class="mb-3">
+    <div class="padding-left">
       <label for="query-type" class="form-label">Nature of enquiry</label>
             <input type="text" class="form-control" id="query-type" name="query-type" required>
    
@@ -78,33 +79,42 @@
        <label for="email-input" class="form-label">Email address</label>
     <input type="email" class="form-control" id="email-input" aria-describedby="email-input" required>
   </div>
- 
+ </div>
 
+      <div class="text-center">
   <button type="submit" class="btn btn-primary" id="btn-submit">Submit</button>
+      </div>
 </form>
+      
+      
         </div>
             
         
-        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-10 col-xs-10 contact">
+        <div class="col-xl-5 col-lg-5 col-md-10 col-sm-10 col-xs-10 contact">
            
-              <div>
-                   <h2>Contact Us</h2>
-                <h3>Telephone</h3>
+              
+                   <h2 class="space-below-title">Contact Us</h2>
+                <div class="padding-left">
+                <h3 class="space-below-title">Telephone</h3>
                 <ul class="bad-list">
                 <li>0207 759 0721</li>
                 </ul>
-                <h3>Address</h3>
+                <h3 class="space-below-title">Address</h3>
                 <ul class="bad-list">
                 <li>Unit 1 Vanilla Lane</li>
                 <li>London</li>
                 <li>N1 5XX</li>
                 </ul>
                 <p class="call-to-action">Follow Us</p>
-                <a href="https://en-gb.facebook.com/">
-                   <img src="https://live.staticflickr.com/65535/53095507284_44f1eb2389_m.jpg" class="social-media-icon" alt="Facebook icon"/>
+                       <a class="image" href="https://www.youtube.com/"><img src="https://live.staticflickr.com/65535/53099939547_23082ab61d_m.jpg" alt="Go to YouTube" class="social-media-icon"></a>
+                <a class="image" href="https://en-gb.facebook.com/">
+                   <img src="https://live.staticflickr.com/65535/53095507284_44f1eb2389_m.jpg" class="social-media-icon" title="Facebook" alt="Go to Facebook"/>
                 </a>
-                <a href="https://instagram.com/">
-                  <img src="https://live.staticflickr.com/65535/53095761625_d338f44695_m.jpg" class="social-media-icon" alt="Instagram icon"/></a>
+                <a class="image" href="https://instagram.com/" >
+                  <img src="https://live.staticflickr.com/65535/53095761625_d338f44695_m.jpg" class="social-media-icon" title="Instagram" alt="Go to Instagram"/></a>
+                </div>
+                
+                
               </div>
     
     </div>
@@ -119,21 +129,24 @@
      <div class="container text-center">
        <div class="row pt-3">
          <div class="col">
-           <p>About Us</p>  
+           <p><a href="" class="footer" id="color">About Us</a></p>  
          </div>
          <div class="col">
-           <p>FAQ</p>
+     
+           <p><a href="" class="footer" id="color" >FAQ</a></p>
          </div>
          <div class="col">
-           <p>Contact Us</p>
+           <p><a href="" class="footer" id="color">Contact Us</a></p>
   </div >  
        </div>
      </div>
-         <div class="container text-center pb-3">
-          
-        <img src="https://live.staticflickr.com/65535/53099939547_23082ab61d_m.jpg" alt="YouTube icon" class="social-media-icon-footer">
-    <img src="https://live.staticflickr.com/65535/53095761625_d338f44695_m.jpg" class="social-media-icon-footer" alt="Instagram icon"/>
-           <img src="https://live.staticflickr.com/65535/53095507284_44f1eb2389_m.jpg" class="social-media-icon-footer" alt="Facebook icon"/>
+         <div class="container text-center pb-4">
+         <a class="image" href="https://www.youtube.com/"> 
+        <img src="https://live.staticflickr.com/65535/53099939547_23082ab61d_m.jpg" alt="Go to YouTube" title="YouTube" class="social-media-icon-footer"></a>
+           <a class="image" href="https://en-gb.facebook.com/">
+    <img src="https://live.staticflickr.com/65535/53095761625_d338f44695_m.jpg" class="social-media-icon-footer" alt="Go to Facebook" title="Facebook"/></a>
+           <a class="image" href="https://instagram.com/" >
+           <img src="https://live.staticflickr.com/65535/53095507284_44f1eb2389_m.jpg" class="social-media-icon-footer" alt="Go to Instagram" title="Instagram"/></a>
     </div>
        
     </footer>

@@ -3,8 +3,24 @@
 .social-media-icon {
   width: 50px;
   border-radius: 17%;
-  
+  margin-right: 1rem;
+  }
+
+.social-media-icon:hover {opacity: 0.7;}
+
+@media only screen and (max-width: 500px) {
+  .social-media-icon {
+
+    margin-right: 0.5rem;
+  }
 }
+
+/* Stops link formatting showing through as blue line. Applied to all social media icons. */
+
+ a.image:link {
+      text-decoration: none;
+}
+
 
 /* Formatting for the social media icons in the footer */
 
@@ -15,6 +31,8 @@
   border-radius: 17%;
 }
 
+.social-media-icon-footer:hover {opacity: 0.7;}
+
 @media only screen and (max-width: 500px) {
   .social-media-icon-footer {
 margin-left: 1rem;
@@ -24,9 +42,15 @@ margin-left: 1rem;
 
 /*sets font and colour of links in the navigation bar  */
 
-.nav-link {
+a.nav-link {
   font-family: "Inter", Verdana;
   color: black;
+}
+
+/* Last attempt to get the green bar looking right */
+.green {
+  background-color: #A6E8E0;
+  width: 100%;
 }
 
 /*There's no H1 on the wireframe. (You can only have one H1 per page). I've been taught that every page needs a H1. The class below hides the H1, though it still takes up space on the page.  */
@@ -34,6 +58,13 @@ margin-left: 1rem;
 .h1-hidden {
   visibility: none;
   font-size: 0.1rem;
+}
+
+/*Adds padding below the H2s plus H3s and makes the text more bold*/
+
+.space-below-title {
+  padding-bottom: 1rem;
+  font-weight: bolder;
 }
 
 /* Feedback block background format */
@@ -55,6 +86,28 @@ margin-left: 1rem;
     padding-bottom: 2rem;
   }
 }
+
+/*Tablet view of Feedback column. Margins/padding set to avoid horizontal alignment problems. NB. Mainly it was the 'Contact Us' column causing the problems*/
+
+@media only screen and (min-width: 501px) and (max-width: 1025px) {
+  .feedback {
+   background-color: #EAC9E4;
+   font-family: "Inter", Verdana;
+  margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+/* Adds a little padding above the labels on the text boxes*/
+label {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+}
+
 
 /* The button class on the default form is blue with white text. This overwrights the formatting. I tried to add it as a class, but when that had no effect I changed it to ID.*/
 
@@ -89,6 +142,30 @@ margin-left: 1rem;
   }
 }
 
+/* Tablet view of the 'Contact Us' column. Column wraps below 'Feedback' to avoid whitespace issue. (Not enough content for the screen height.) Margin and padding set to avoid horizontal alignment problems.*/
+
+@media only screen and (min-width: 501px) and (max-width: 1025px) {
+ .contact { 
+  background-color: #333333;
+  color: white;
+  font-family: "Inter", Verdana;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+   text-align: center;
+  }
+}
+
+/*Added the below to a div to make the body text in the columns sit further to the right */
+
+.padding-left {
+  padding-left: 1rem;
+}
+
+
 /*This removes the bullet points from a bullet pointed list. I've done this entirely for style reasons. Previously, I'd used <br> to separate the lines but this didn't work well combined with 'text-indent' – very uneven. It's a bad list because it's not semantic HTML i.e. it's not really a list. When I have more time, I'll create a specific 'p' style to make the lines closer together.  */
 
 .bad-list {
@@ -99,7 +176,7 @@ margin-left: 1rem;
 /* class to p elements to make them bigger and more striking where headings aren't appropriate */
 
 .call-to-action {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Inter", Verdana;
 }
 
@@ -110,3 +187,20 @@ margin-left: 1rem;
   color: white;
   width: 100%;
 }
+
+/* Removes underlining from text links in footer*/
+
+ a.footer:link {
+      text-decoration: none;
+}
+
+/* Changes the text of the links from blue to white*/
+
+#color {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Restores 'hover' effect to text links*/
+
+#color:hover {opacity: 0.7;}
