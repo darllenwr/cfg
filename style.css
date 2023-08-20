@@ -1,40 +1,3 @@
-  /* For extra-large screens with a minimum width of 1200px */
-  @media only screen and (min-width: 1200px) {
-    /* Your CSS rules for extra-large screens here */
-  
-/*nav bar styling*/
-
-.navbar.navbar-expand-lg.bg-body-tertiary{
-    background-color: #white;
-}
-.navbar-brand{
-    padding-left: 200px;
-    font-weight: bold;
-    font-family: 'Titan One', cursive;
-}
-.social-media-icon{
-    height: 100px;
-    width: 100px;
-}
-h2{
-    font-family: 'Titan One', cursive;
-    font-size: 250px;
-    text-align: left;
-}
-.navbar-nav.me-auto.mb-2.mb-lg-0{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 200px;
-    padding-left: 200px;
-    color: #C42847;
-    font-size: 30px;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: bold;
-}
-
-.nav-item{
-    padding-left: 100px;
-}
 
 /*homepage welcome banner styling*/
 .flex-container-homepage-header1{
@@ -59,28 +22,6 @@ h2{
     font-family: 'Titan One', cursive;
 }
 
-.strapline{
-    padding-top: 500px;
-    padding-left: 220px;
-    padding-right: 220px;
-    font-size: 100px;
-    color:#C42847;
-    font-family: 'Titan One', cursive;
-}
-.order-button{
-    margin-top: 50px;
-    margin-left: 220px;
-    border-radius: 100px;
-    border-color: #C42847;
-    background: #C42847;
-    width: 500px;
-    height: 200px;
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: bold;
-}
 /*three containers aligned to navigation*/
 
 .section1_wrapper{
@@ -100,46 +41,12 @@ h2{
     margin-bottom: 200px;
 }
 
-.border_image1{
-    width: 50px;
-    height:500px;
-}
-.col.themed-grid-col-1{
-    background-color: #7FD1B9;
-    margin-top: 375px;
-    height: 1200px;
-    width: 800px;
-    border-radius: 25px;
-}
-
-.col.themed-grid-col-2{
-    background-color: #FFABCF;
-    margin-top: 375px;
-    height: 1200px;
-    width: 800px;
-    border-radius: 25px;
-}
-
 .col.themed-grid-col-3{
     background-color: #FBD87F;
     margin-top: 375px;
     height: 1200px;
     width: 800px;
     border-radius: 25px;
-}
-
-.col1_header{
-    display: flex;
-    flex-direction: column;
-    flex-direction: row;    
-    justify-content: center;
-    padding-top: 150px;
-    padding-left: 150px;
-    padding-right: 150px;
-    font-family: 'Titan One', cursive;
-    font-size: 80px;
-    color: white;
-    flex: auto;   
 }
 
 .col_text{
@@ -157,70 +64,6 @@ h2{
     height: 200px;
     width: 200px;
     color: white;
-}
-
-/* Video style  */
-
-.section2_wrapper{
-    background-color:#FBD87F;
-    height: 3000px;
-    margin-bottom: 250px;
-}
-.section2_header{
-    text-align: center;
-    font-size: 100px;
-    padding-top: 200px;
-    color: teal;
-}
-.homepage_video1{
-    display: flex;
-    flex-direction: column;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 200px;
-    padding-bottom: 150px;
-    margin-left: 220px;
-    margin-right: 220px;
-}
-
-/*Bootsrap grid styling*/
-.grid-container{
-    padding-top: 50px;
-    padding-left: 220px;
-    padding-right: 220px;
-    padding-bottom: 150px;
-}
-.col-xl-4.themed-grid-col-1{
-    height: 1250px;
-    flex: auto;
-}
-
-.col-xl-4.themed-grid-col-2{
-    background-image: url(homepage_grid_image1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1250px;
-    flex: auto;
-}
-
-.col-xl-4.themed-grid-col-3{
-    height: 1250px;
-    flex: auto;
-}
-
-.col-xl-4.themed-grid-col-4{
-    background-image: url(homepage_grid_image2.avif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 1250px;
-    flex: auto;
-}
-
-.col-xl-4.themed-grid-col-5{
-    height: 1250px;
-    flex: auto;
 }
 
 .col-xl-4.themed-grid-col-6{
@@ -268,22 +111,6 @@ h2{
 
 /* Footer styling*/
 
-.footer_container{
-    background-color: #7FD1B9;
-}
-.footer_links_container{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.footer_nav_text{
-    color: black;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'DM Sans', sans-serif;
-}
-
 .social-media-container{
     display: flex;
     flex-direction: row;
@@ -298,146 +125,4 @@ h2{
     margin: 20px;
 }
 
-.bi.bi-facebook{
-    height: 50px;
-    width: 50px;
-    color: black;
-    margin: 20px;
-}
 
-.bi.bi-youtube{
-    height: 50px;
-    width: 50px;
-    color: black;
-    margin: 20px;
-}
-
-.copyright_text{
-    color: black;
-    text-decoration: none;
-    font-size: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 50px;
-    font-family: 'DM Sans', sans-serif;
-}
-
-
-
-/* For small screens/mobile with a maximum width of 767px */
-@media only screen and (max-width: 767px) {
-
-/*nav bar styling MOBILE*/
-.navbar-brand{
-    font-size: 100px;
-    font-weight: bold;
-}
-.navbar-nav.me-auto.mb-2.mb-lg-0{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: black;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-/*homepage welcome banner styling*/
-.flex-container-homepage-header1{
-    display:flex;
-    flex-direction: row;
-    flex-direction: column;
-    text-align: left;
-    align-items: left;
-    background-image: url('ice_cream_banner1.avif');
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: inherit;
-    height: 900px;
-}
-.welcome-title{
-    padding-top: 100px;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-}
-
-.button_container{
-    margin-top: 175px;
-}
-.order-button{
-    border-radius: 25px;
-    border-color: black;
-    background: black;
-    width: 250px;
-    height: 100px;
-    font-size: 25px;
-    font-weight: bolder;
-    color: white;
-}
-/*Bootsrap grid styling*/
-.grid-container{
-    padding: 0%;
-    padding-top: 50px;
-    padding-bottom: 150px;
-}
-.col-md-4.themed-grid-col-1{
-    background-image: url(homepage_grid_image2.avif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 500px;
-    flex: auto;
-}
-
-.col-md-4.themed-grid-col-2{
-    background-color:rgb(166,232,224);
-    height: 500px;
-    flex: auto;
-}
-
-.col-md-4.themed-grid-col-3{
-    background-image: url(homepage_grid_image4.avif);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 500px;
-    flex: auto;
-}
-
-.col-md-4.themed-grid-col-4{
-    background-color:rgb(245,171,178);
-    height: 500px;
-    flex: auto;
-}
-
-.col-md-4.themed-grid-col-5{
-    background-image: url(homepage_grid_image13.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 500px;
-    flex: auto;
-}
-
-.col-md-4.themed-grid-col-6{
-    background-image: url(homepage_grid_image12.avif);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 500px;
-    flex: auto;
-  }
-}
-  
-  /* For medium screens/tablets with a minimum width of 768px and a maximum width of 991px */
- @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Your CSS rules for medium screens here */
-  
-  }
-  /* For large screens/laptops with a minimum width of 992px and a maximum width of 1199px */
- @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    /* Your CSS rules for large screens here */
- 
-  }
-  
