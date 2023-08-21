@@ -1,4 +1,119 @@
+/* class to style social media icons: Facebook, Instagram etc. Have also put it on the 5G logo for now*/
+
+.social-media-icon {
+  width: 50px;
+  border-radius: 17%;
+  
+}
+
+/* Formatting for the social media icons in the footer */
+
+.social-media-icon-footer {
+  width: 50px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 17%;
+}
+
+@media only screen and (max-width: 500px) {
+  .social-media-icon-footer {
+margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/*sets font and colour of links in the navigation bar  */
+
+.nav-link {
+  font-family: "Inter", Verdana;
+  color: black;
+}
+
+/*There's no H1 on the wireframe. (You can only have one H1 per page). I've been taught that every page needs a H1. The class below hides the H1, though it still takes up space on the page.  */
+
+.h1-hidden {
+  visibility: none;
+  font-size: 0.1rem;
+}
+
+/* Feedback block background format */
+.feedback {
+  background-color: #EAC9E4;
+  font-family: "Inter", Verdana;
+  margin-left: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+/*Mobile view of Feedback column. Margins to increase gap between vertically stacked columns, and padding to make the div cut-off less abrupt*/
+
+@media only screen and (max-width: 500px) {
+  .feedback {
+   background-color: #EAC9E4;
+   font-family: "Inter", Verdana;
+  margin-bottom: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* The button class on the default form is blue with white text. This overwrights the formatting. I tried to add it as a class, but when that had no effect I changed it to ID.*/
+
+#btn-submit {
+  font-family: "Inter", Verdana;
+  font-size: 1.2rem;
+  font-weight: 2;
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+
+/* Contact block background format */
+.contact {
+  background-color: #333333;
+  color: white;
+  font-family: "Inter", Verdana;
+  margin-right: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-indent: 1rem;
+}
+
+/* For mobile view of the 'Contact Us' column  */
+@media only screen and (max-width: 500px) {
+  .contact {
+  background-color: #333333;
+  color: white;
+  font-family: "Inter", Verdana;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  }
+}
+
+/*This removes the bullet points from a bullet pointed list. I've done this entirely for style reasons. Previously, I'd used <br> to separate the lines but this didn't work well combined with 'text-indent' – very uneven. It's a bad list because it's not semantic HTML i.e. it's not really a list. When I have more time, I'll create a specific 'p' style to make the lines closer together.  */
+
+.bad-list {
+  list-style-type: none;
+}
+
+
+/* class to p elements to make them bigger and more striking where headings aren't appropriate */
+
+.call-to-action {
+  font-size: 1.5rem;
+  font-family: "Inter", Verdana;
+}
+
+/* Background colour and text colour for the footer */
+
+.footer-format {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
 /*HOMEPAGE STYLING*/
+
+
   /* For extra-large screens with a minimum width of 1200px */
   @media only screen and (min-width: 1200px) {
     /*nav bar styling*/
