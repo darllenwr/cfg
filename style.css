@@ -73,8 +73,8 @@
         color: #C42847;
     }
     
-    #orderButton{
-        margin-top: 400px;
+    .button_container{
+        margin-top: 300px;
         margin-left: 220px;
         border-radius: 100px;
         border-color: #C42847;
@@ -82,10 +82,18 @@
         width: 500px;
         height: 200px;
         font-size: 50px;
+    }
+    #orderButton{
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-top: 55px;
         font-weight: bold;
         color: white;
         font-family: 'DM Sans', sans-serif;
         font-weight: bold;
+        text-decoration: none;
     }
     
     /*three containers aligned to navigation*/
@@ -402,19 +410,30 @@
         color: #FFABCF;
     }
     
-    #orderButton{
+    .button_container{
         margin-top: 50px;
-        margin-left: 120px;
+        margin-left: 130px;
         border-radius: 100px;
-        border-color:#C42847;
+        border-color: #C42847;
         background: #C42847;
         width: 500px;
         height: 200px;
-        font-size: 40px;
+        font-size: 50px;
+    }
+    #orderButton{
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-weight: bold;
         color: white;
         font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
     }
-    
+
     /*three containers aligned to navigation*/
     
     .section1_wrapper{
