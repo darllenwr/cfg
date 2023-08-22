@@ -357,7 +357,8 @@
         font-weight: bold;
       
     }
-    
+
+ 
     .nav-item{
         text-align: center;
     }
@@ -705,8 +706,10 @@ margin-left: 1rem;
 /*sets font and colour of links in the navigation bar  */
 
 a.nav-link {
-  font-family: "Inter", Verdana;
-  color: black;
+    color: #C42847;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 /* Last attempt to get the green bar looking right */
@@ -802,6 +805,8 @@ label {
   background-color: black;
   color: white;
 }
+
+#btn-submit:hover {opacity: 0.7;}
 
 /* Contact block background format */
 .f-contact {
