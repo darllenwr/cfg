@@ -1,6 +1,13 @@
 /* LOCATIONS PAGE CSS */
 
     /*LOCATIONS HEADER*/
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     header {
       padding: 20px 40px 20px 40px;
       display: flex;
@@ -17,7 +24,18 @@
       justify-content: flex-end;
       text-align: right;
     }
-  
+
+    .nav-link {
+      font-family: 'DM Sans';
+      color: #F8415B;
+      font-weight: 600;
+      font-size: 19px;
+    }
+    
+    .nav-link:hover {
+      color: #990a8d;
+    }
+
     .container-fluid {
       width: 100%;
     }
@@ -73,7 +91,7 @@
   .main-search-input {
     background: #fff;
     padding: 0 120px 0 0;
-    border-radius: 1px;
+    border-radius: 50px;
     margin-top: 200px;
     box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.3);
   }
@@ -128,8 +146,8 @@
     color: #fff;
     top: 0;
     border: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     cursor: pointer;
   }
   
@@ -158,12 +176,13 @@
   .main-search-input-wrap {
     top: 10%;
     right: 20%;
+    justify-content: center;
   }
   
   .main-search-input {
     background: rgba(255,255,255,0.2);
     padding: 14px 20px 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.0);
   }
   
@@ -176,7 +195,7 @@
   }
   
   .main-search-input-item input {
-    border-radius: 6px !important;
+    border-radius: 10px !important;
     background: #fff;
   }
   
@@ -184,7 +203,7 @@
     position: relative;
     float: left;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 50px;
   }
   }
   
