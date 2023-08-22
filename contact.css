@@ -350,13 +350,12 @@
     }
     
     .navbar-nav.me-auto.mb-2.mb-lg-0{
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 250px;
+        
         color: #C42847;
         font-size: 30px;
         font-family: 'DM Sans', sans-serif;
         font-weight: bold;
+      
     }
     
     .nav-item{
@@ -367,6 +366,7 @@
       text-decoration: none;
       color: #C42847;
     }
+}
     
     /*homepage welcome banner styling*/
     .flex-container-homepage-header1{
@@ -632,7 +632,7 @@
     }
     
     .copyright_text{
-        color: black;
+        color:black;
         text-decoration: none;
         font-size: 25px;
         display: flex;
@@ -641,7 +641,7 @@
         padding-bottom: 50px;
         font-family: 'DM Sans', sans-serif;
     }
-    }
+    
 
 
 /* Fiona's CSS */
