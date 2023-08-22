@@ -806,6 +806,8 @@ label {
   color: white;
 }
 
+#btn-submit:hover {opacity: 0.7;}
+
 /* Contact block background format */
 .f-contact {
   background-color: #333333;
