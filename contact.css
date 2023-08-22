@@ -674,10 +674,15 @@
 
 /* Stops link formatting showing through as blue line. Applied to all social media icons. */
 
+
  a.f-image:link {
       text-decoration: none;
 }
 
+.image-container {
+    margin-left: 1.5rem;
+    padding-top: 1rem;
+}
 
 /* Formatting for the social media icons in the footer */
 
@@ -723,6 +728,13 @@ a.nav-link {
   padding-bottom: 1rem;
   font-family: 'Titan One', cursive;
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 501px) {
+
+    .f-space-below-title {
+        font-size: 2.5rem;
+    }
 }
 
 .f-space-below-title-h3 {
@@ -799,7 +811,7 @@ label {
   margin-right: auto;
   padding-bottom: 2rem;
   padding-top: 2rem;
-  text-indent: 1rem;
+  text-indent: 3rem;
   font-size: 1.2rem
 }
 
@@ -848,7 +860,7 @@ label {
 /* class to p elements to make them bigger and more striking where headings aren't appropriate */
 
 .f-call-to-action {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-family: "Inter", Verdana;
   font-weight: bolder;
 }
