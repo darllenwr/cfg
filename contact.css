@@ -808,6 +808,36 @@ label {
 
 #btn-submit:hover {opacity: 0.7;}
 
+.submitted-h1 {
+    font-family: "Titan One", cursive;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .submitted-h1 {
+    font-size: 2.5rem;
+  }
+  }
+
+.submitted {
+    font-family: "Inter", Verdana;
+    font-size: 1.2rem;
+}
+
+#btn-return {
+    background-color:#C42847;
+    color: white;
+    border-color:#C42847;
+    font-family: "Inter", Verdana;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+#btn-return:hover {opacity: 0.7;}
+
 /* Contact block background format */
 .f-contact {
   background-color: #333333;
