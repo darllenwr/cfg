@@ -1,0 +1,933 @@
+/* Yasmin's CSS */
+
+/*HOMEPAGE STYLING*/
+  /* For extra-large screens with a minimum width of 1200px */
+  @media only screen and (min-width: 1200px) {
+    /*nav bar styling*/
+    
+    .navbar.navbar-expand-lg.bg-body-tertiary{
+        background-color: white;
+    }
+    .navbar-brand{
+        padding-left: 200px;
+        font-weight: bold;
+        font-family: 'Titan One', cursive;
+    }
+    
+    .navbar-nav.me-auto.mb-2.mb-lg-0{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 200px;
+        padding-left: 200px;
+        color: #C42847;
+        font-size: 30px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+    }
+    
+    .nav-item{
+        padding-left: 100px;
+    }
+
+    .nav-link-homepage{
+      text-decoration: none;
+      color: #C42847;
+    }
+    
+    /*homepage welcome banner styling*/
+    .flex-container-homepage-header1{
+        display:flex;
+        flex-direction: row;
+        flex-direction: column;
+        text-align: left;
+        align-items: left;
+        background-image: url('homepage_banner1.jpg');
+        background-attachment:inherit;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: relative;
+        height: 2000px;
+    }
+    .welcome-title{
+        padding-top: 500px;
+        padding-left: 220px;
+        padding-right: 220px;
+        font-size: 200px;
+        color: #C42847;
+        font-family: 'Titan One', cursive;
+    }
+    .welcome-title-part1{
+        color: white;
+    }
+    
+    .strapline{
+        padding-left: 220px;
+        padding-right: 220px;
+        font-size: 100px;
+        color: white;
+        font-family: 'Titan One', cursive;
+    }
+    .strapline-part1{
+        color: #C42847;
+    }
+    
+    #orderButton{
+        margin-top: 400px;
+        margin-left: 220px;
+        border-radius: 100px;
+        border-color: #C42847;
+        background: #C42847;
+        width: 500px;
+        height: 200px;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+    }
+    
+    /*three containers aligned to navigation*/
+    
+    .section1_wrapper{
+        background-image: url(section1_background_img.jpg);
+        background-position: center;
+        background-size: 75%;
+        background-repeat: no-repeat;
+        height: 1800px;
+        margin-bottom: 250px;
+    }
+    .row.row-cols-1.row-cols-xxl-3.gy-4.text-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 5%;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    
+    .border_image1{
+        width: 50px;
+        height:500px;
+    }
+    .col.themed-grid-col-1{
+        background-color: #7FD1B9;
+        margin-top: 375px;
+        height: 1200px;
+        width: 800px;
+        border-radius: 25px;
+    }
+    
+    .col.themed-grid-col-2{
+        background-color: #FFABCF;
+        margin-top: 375px;
+        height: 1200px;
+        width: 800px;
+        border-radius: 25px;
+    }
+    
+    .col.themed-grid-col-3{
+        background-color: #FBD87F;
+        margin-top: 375px;
+        height: 1200px;
+        width: 800px;
+        border-radius: 25px;
+    }
+    
+    .col1_header{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;    
+        justify-content: center;
+        padding-top: 150px;
+        padding-left: 150px;
+        padding-right: 150px;
+        font-family: 'Titan One', cursive;
+        font-size: 80px;
+        color: white;
+        flex: auto;   
+    }
+    
+    .col_text{
+        font-size: 40px;
+        padding-top: 150px;
+        padding-left: 100px;
+        padding-right: 100px;
+        color: white;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+    }
+    
+    .bi.bi-arrow-right-circle-fill{
+        padding-top: 50px;
+        height: 200px;
+        width: 200px;
+        color: white;
+    }
+    
+    /* Video style  */
+    
+    .section2_wrapper{
+        background-color:#FBD87F;
+        height: 3000px;
+        margin-bottom: 250px;
+    }
+    .section2_header{
+        text-align: center;
+        font-size: 100px;
+        padding-top: 200px;
+        color: teal;
+        font-family: 'Titan One', cursive;
+        font-size: 100px;
+    }
+    
+    .section2_header_part1{
+        color: white;
+    }
+    
+    .homepage_video1{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 200px;
+        padding-bottom: 150px;
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+    
+    /*Bootsrap grid styling*/
+    .grid-container{
+        padding-top: 50px;
+        padding-left: 220px;
+        padding-right: 220px;
+        padding-bottom: 150px;
+    }
+    .col-xl-4.themed-grid-col-1{
+        height: 1250px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-2{
+        background-image: url(homepage_grid_image1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1250px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-3{
+        height: 1250px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-4{
+        background-image: url(homepage_grid_image2.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 1250px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-5{
+        height: 1250px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-6{
+        background-image: url(homepage_grid_image3.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 1250px;
+        flex: auto;
+    }
+    .grid_text_default1{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;    
+        justify-content: center;
+        padding-top: 500px;
+        font-size: 100px;
+        flex: auto;
+        color: #7FD1B9;
+        font-family: 'Titan One', cursive;
+    
+    }
+    .grid_text_default2{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;    
+        justify-content: center;
+        padding-top: 500px;
+        font-size: 100px;
+        flex: auto;
+        color: #FFABCF;
+        font-family: 'Titan One', cursive;
+    }
+    .grid_text_default3{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;    
+        justify-content: center;
+        padding-top: 500px;
+        font-size: 100px;
+        flex: auto;
+        color: #FBD87F;
+        font-family: 'Titan One', cursive;
+    }
+    
+    /* Footer styling*/
+    
+    .footer_container{
+        background-color: #7FD1B9;
+    }
+    .footer_links_container{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .footer_nav_text{
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    .social-media-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    
+    .bi.bi-instagram{
+        height: 50px;
+        width: 50px;
+        color: black;
+        margin: 20px;
+    }
+    
+    .bi.bi-facebook{
+        height: 50px;
+        width: 50px;
+        color: black;
+        margin: 20px;
+    }
+    
+    .bi.bi-youtube{
+        height: 50px;
+        width: 50px;
+        color: black;
+        margin: 20px;
+    }
+    
+    .copyright_text{
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 50px;
+        font-family: 'DM Sans', sans-serif;
+    }
+    }
+    
+     
+    /* For small screens/mobile with a maximum width of 767px */
+    @media only screen and (max-width: 767px) {
+    /*nav bar styling*/
+    
+    .navbar.navbar-expand-lg.bg-body-tertiary{
+        background-color: white;
+    }
+    .navbar-brand{
+        font-weight: bold;
+        font-family: 'Titan One', cursive;
+    }
+    
+    .navbar-nav.me-auto.mb-2.mb-lg-0{
+        
+        color: #C42847;
+        font-size: 30px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+      
+    }
+
+ 
+    .nav-item{
+        text-align: center;
+    }
+
+    .nav-link-homepage{
+      text-decoration: none;
+      color: #C42847;
+    }
+}
+    
+    /*homepage welcome banner styling*/
+    .flex-container-homepage-header1{
+        display:flex;
+        flex-direction: row;
+        flex-direction: column;
+        text-align: left;
+        align-items: left;
+        background-image: url(homepage_banner_2.jpeg);
+        background-attachment:inherit;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        height: 600px;
+        width: 100%;
+    }
+    
+    .welcome-title{
+        display: none;
+    }
+    
+    .strapline{
+        padding-top: 750px;
+        text-align: center;
+        font-size: 80px;
+        color:#C42847;
+        font-family: 'Titan One', cursive;
+    }
+    
+    .strapline-part1{
+        color: #FFABCF;
+    }
+    
+    #orderButton{
+        margin-top: 50px;
+        margin-left: 120px;
+        border-radius: 100px;
+        border-color:#C42847;
+        background: #C42847;
+        width: 500px;
+        height: 200px;
+        font-size: 40px;
+        color: white;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    /*three containers aligned to navigation*/
+    
+    .section1_wrapper{
+    margin-bottom: 30px;
+    }
+    
+    .row.row-cols-1.row-cols-xxl-3.gy-4.text-center{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 700px;
+    }
+    
+    .col.themed-grid-col-1{
+        background-color: #7FD1B9;
+        height: 600px;
+        width: 100%;
+    }
+    
+    .col.themed-grid-col-2{
+        background-color: #FFABCF;
+        height: 600px;
+        width: 100%;
+    }
+    
+    .col.themed-grid-col-3{
+        background-color: #FBD87F;
+        height: 600px;
+        width: 100%;
+    }
+    
+    .col1_header{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;    
+        justify-content: center;
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-family: 'Titan One', cursive;
+        font-size: 60px;
+        color: white;
+        flex: auto;   
+    }
+    
+    .col_text{
+        font-size: 40px;
+        padding-top: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        color: white;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+    }
+    
+    .bi.bi-arrow-right-circle-fill{
+        padding-top: 50px;
+        height: 150px;
+        width: 150px;
+        color: white;
+    }
+    
+    /* Video style  */
+    
+    .section2_wrapper{
+        height: 900px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .section2_header{
+        text-align: center;
+        font-family: 'Titan One', cursive;
+        font-size: 80px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        color: #C42847;
+    }
+    
+    .section2_header_part1{
+        color: #FFABCF;
+    }
+    
+    .homepage_video1{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+    
+    /*Bootsrap grid styling*/
+    .grid-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .col-xl-4.themed-grid-col-1{
+        height: 600px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-2{
+        background-image: url(homepage_grid_image2.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-3{
+        height: 600px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-4{
+        background-image: url(homepage_grid_image3.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 600px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-5{
+        height: 600px;
+        flex: auto;
+    }
+    
+    .col-xl-4.themed-grid-col-6{
+        background-image: url(homepage_grid_image1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 600px;
+        flex: auto;
+    }
+    .grid_text_default1{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;    
+        justify-content: center;
+        padding-top: 200px;
+        font-size: 80px;
+        flex: auto;
+        color: #7FD1B9;
+        font-family: 'Titan One', cursive;
+    
+    }
+    .grid_text_default2{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;    
+        justify-content: center;
+        margin-top: 200px;
+        font-size: 80px;
+        flex: auto;
+        color: #FFABCF;
+        font-family: 'Titan One', cursive;
+    }
+    .grid_text_default3{
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;    
+        justify-content: center;
+        padding-top: 150px;
+        font-size: 80px;
+        flex: auto;
+        color: #FBD87F;
+        font-family: 'Titan One', cursive;
+    }
+    
+    /* Footer styling*/
+
+    .footer_container{
+        background-color: #7FD1B9;
+    }
+    .footer_links_container{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .footer_nav_text{
+        color: black;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    .social-media-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .bi.bi-instagram{
+        height: 50px;
+        width: 50px;
+        color: black;
+        margin: 20px;
+    }
+    
+    .bi.bi-facebook{
+        height: 50px;
+        width: 50px;
+        color: black;
+        margin: 20px;
+    }
+    
+    .bi.bi-youtube{
+        height: 50px;
+        width: 50px;
+        color: black;
+        margin: 20px;
+    }
+    
+    .copyright_text{
+        color:black;
+        text-decoration: none;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 50px;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+
+
+/* Fiona's CSS */
+/* class to style social media icons: Facebook, Instagram etc. Have also put it on the 5G logo for now*/
+
+#f-yellow-nav {
+  background-color: white;
+}
+
+#f-social-media-icon {
+ width: 100px;
+ border-radius: 17%;
+ margin-right: 1rem;  
+}
+
+.f-social-media-icon {
+  width: 50px;
+  border-radius: 17%;
+  margin-right: 1rem;
+  }
+
+.f-social-media-icon:hover {opacity: 0.7;}
+
+@media only screen and (max-width: 500px) {
+  .f-social-media-icon {
+
+    margin-right: 0.5rem;
+  }
+}
+
+/* Stops link formatting showing through as blue line. Applied to all social media icons. */
+
+
+ a.f-image:link {
+      text-decoration: none;
+}
+
+.image-container {
+    margin-left: 1.5rem;
+    padding-top: 1rem;
+}
+
+/* Formatting for the social media icons in the footer */
+
+.f-social-media-icon-footer {
+  width: 50px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 17%;
+}
+
+.f-social-media-icon-footer:hover {opacity: 0.7;}
+
+@media only screen and (max-width: 500px) {
+  .f-social-media-icon-footer {
+margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/*sets font and colour of links in the navigation bar  */
+
+a.nav-link {
+    color: #C42847;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* Last attempt to get the green bar looking right */
+.f-green {
+  background-color: #7FD1B9;
+  width: 100%;
+}
+
+/*There's no H1 on the wireframe. (You can only have one H1 per page). I've been taught that every page needs a H1. The class below hides the H1, though it still takes up space on the page.  */
+
+.f-h1-hidden {
+  visibility: none;
+  font-size: 0.1rem;
+}
+
+/*Adds padding below the H2s plus H3s and changes font to the homepage style*/
+
+.f-space-below-title {
+  padding-bottom: 1rem;
+  font-family: 'Titan One', cursive;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 501px) {
+
+    .f-space-below-title {
+        font-size: 2.5rem;
+    }
+}
+
+.f-space-below-title-h3 {
+  padding-bottom: 1rem;
+  font-family: 'Titan One', cursive;
+  font-size: 2rem;
+}
+
+/* Feedback block background format */
+.f-feedback {
+  background-color: #FFA9D0;
+  font-family: "Inter", Verdana;
+  margin-left: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+
+/*Mobile view of Feedback column. Margins to increase gap between vertically stacked columns, and padding to make the div cut-off less abrupt*/
+
+@media only screen and (max-width: 500px) {
+  .f-feedback {
+   background-color: #EAC9E4;
+   font-family: "Inter", Verdana;
+  margin-bottom: 3rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/*Tablet view of Feedback column. Margins/padding set to avoid horizontal alignment problems. NB. Mainly it was the 'Contact Us' column causing the problems*/
+
+@media only screen and (min-width: 501px) and (max-width: 1025px) {
+  .f-feedback {
+   background-color: #EAC9E4;
+   font-family: "Inter", Verdana;
+  margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+/* Adds a little padding above the labels on the text boxes*/
+label {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  label {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+}
+}
+  
+/* The button class on the default form is blue with white text. This overwrights the formatting. I tried to add it as a class, but when that had no effect I changed it to ID.*/
+
+#btn-submit {
+  font-family: "Inter", Verdana;
+  font-size: 1.2rem;
+  font-weight: 2;
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+
+#btn-submit:hover {opacity: 0.7;}
+
+.submitted-h1 {
+    font-family: "Titan One", cursive;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .submitted-h1 {
+    font-size: 2.5rem;
+  }
+  }
+
+.submitted {
+    font-family: "Inter", Verdana;
+    font-size: 1.2rem;
+}
+
+#btn-return {
+    background-color:#C42847;
+    color: white;
+    border-color:#C42847;
+    font-family: "Inter", Verdana;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+#btn-return:hover {opacity: 0.7;}
+
+/* Contact block background format */
+.f-contact {
+  background-color: #333333;
+  color: white;
+  font-family: "Inter", Verdana;
+  margin-right: auto;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-indent: 3rem;
+  font-size: 1.2rem
+}
+
+/* For mobile view of the 'Contact Us' column  */
+@media only screen and (max-width: 500px) {
+  .f-contact {
+  background-color: #333333;
+  color: white;
+  font-family: "Inter", Verdana;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  }
+}
+
+/* Tablet view of the 'Contact Us' column. Column wraps below 'Feedback' to avoid whitespace issue. (Not enough content for the screen height.) Margin and padding set to avoid horizontal alignment problems.*/
+
+@media only screen and (min-width: 501px) and (max-width: 1025px) {
+ .f-contact { 
+  background-color: #333333;
+  color: white;
+  font-family: "Inter", Verdana;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+   text-align: center;
+  }
+}
+
+/*Added the below to a div to make the body text in the columns sit further to the right */
+
+.f-padding-left {
+  padding-left: 1rem;
+}
+
+
+/*This removes the bullet points from a bullet pointed list. I've done this entirely for style reasons. Previously, I'd used <br> to separate the lines but this didn't work well combined with 'text-indent' – very uneven. It's a bad list because it's not semantic HTML i.e. it's not really a list. When I have more time, I'll create a specific 'p' style to make the lines closer together.  */
+
+.f-bad-list {
+  list-style-type: none;
+}
+
+
+/* class to p elements to make them bigger and more striking where headings aren't appropriate */
+
+.f-call-to-action {
+  font-size: 1.4rem;
+  font-family: "Inter", Verdana;
+  font-weight: bolder;
+}
+
+/* Background colour and text colour for the footer */
+
+.f-footer-format {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+/* Removes underlining from text links in footer*/
+
+ a.footer:link {
+      text-decoration: none;
+}
+
+/* After I added Yasmin's footer, the space between it and the text blocks vanished. The below adds some space again. */
+
+.f-footer {
+margin-top: 5rem;  
+}
+
+/* Changes the text of the links from blue to white*/
+
+#color {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Restores 'hover' effect to text links*/
+
+#color:hover {opacity: 0.7;}
+

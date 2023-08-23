@@ -1,117 +1,4 @@
-
-
-/* class to style social media icons: Facebook, Instagram etc. Have also put it on the 5G logo for now*/
-
-.social-media-icon {
-  width: 50px;
-  border-radius: 17%;
-  
-}
-
-/* Formatting for the social media icons in the footer */
-
-.social-media-icon-footer {
-  width: 50px;
-  margin-right: 2rem;
-  margin-left: 2rem;
-  border-radius: 17%;
-}
-
-@media only screen and (max-width: 500px) {
-  .social-media-icon-footer {
-margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-/*sets font and colour of links in the navigation bar  */
-
-.nav-link {
-  font-family: "Inter", Verdana;
-  color: black;
-}
-
-/*There's no H1 on the wireframe. (You can only have one H1 per page). I've been taught that every page needs a H1. The class below hides the H1, though it still takes up space on the page.  */
-
-.h1-hidden {
-  visibility: none;
-  font-size: 0.1rem;
-}
-
-/* Feedback block background format */
-.feedback {
-  background-color: #EAC9E4;
-  font-family: "Inter", Verdana;
-  margin-left: auto;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-}
-
-/*Mobile view of Feedback column. Margins to increase gap between vertically stacked columns, and padding to make the div cut-off less abrupt*/
-
-@media only screen and (max-width: 500px) {
-  .feedback {
-   background-color: #EAC9E4;
-   font-family: "Inter", Verdana;
-  margin-bottom: 3rem;
-    padding-bottom: 2rem;
-  }
-}
-
-/* The button class on the default form is blue with white text. This overwrights the formatting. I tried to add it as a class, but when that had no effect I changed it to ID.*/
-
-#btn-submit {
-  font-family: "Inter", Verdana;
-  font-size: 1.2rem;
-  font-weight: 2;
-  border-color: black;
-  background-color: black;
-  color: white;
-}
-
-/* Contact block background format */
-.contact {
-  background-color: #333333;
-  color: white;
-  font-family: "Inter", Verdana;
-  margin-right: auto;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-  text-indent: 1rem;
-}
-
-/* For mobile view of the 'Contact Us' column  */
-@media only screen and (max-width: 500px) {
-  .contact {
-  background-color: #333333;
-  color: white;
-  font-family: "Inter", Verdana;
-  margin-top: 2rem;
-  padding-bottom: 2rem;
-  }
-}
-
-/*This removes the bullet points from a bullet pointed list. I've done this entirely for style reasons. Previously, I'd used <br> to separate the lines but this didn't work well combined with 'text-indent' – very uneven. It's a bad list because it's not semantic HTML i.e. it's not really a list. When I have more time, I'll create a specific 'p' style to make the lines closer together.  */
-
-.bad-list {
-  list-style-type: none;
-}
-
-
-/* class to p elements to make them bigger and more striking where headings aren't appropriate */
-
-.call-to-action {
-  font-size: 1.5rem;
-  font-family: "Inter", Verdana;
-}
-
-/* Background colour and text colour for the footer */
-
-.footer-format {
-  background-color: black;
-  color: white;
-  width: 100%;
-}
+/*Homepage CSS */
 
 /*HOMEPAGE STYLING*/
 
@@ -186,8 +73,8 @@ margin-left: 1rem;
         color: #C42847;
     }
     
-    #orderButton{
-        margin-top: 400px;
+    .button_container{
+        margin-top: 300px;
         margin-left: 220px;
         border-radius: 100px;
         border-color: #C42847;
@@ -195,10 +82,18 @@ margin-left: 1rem;
         width: 500px;
         height: 200px;
         font-size: 50px;
+    }
+    #orderButton{
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-top: 55px;
         font-weight: bold;
         color: white;
         font-family: 'DM Sans', sans-serif;
         font-weight: bold;
+        text-decoration: none;
     }
     
     /*three containers aligned to navigation*/
@@ -515,19 +410,30 @@ margin-left: 1rem;
         color: #FFABCF;
     }
     
-    #orderButton{
+    .button_container{
         margin-top: 50px;
-        margin-left: 120px;
+        margin-left: 130px;
         border-radius: 100px;
-        border-color:#C42847;
+        border-color: #C42847;
         background: #C42847;
         width: 500px;
         height: 200px;
-        font-size: 40px;
+        font-size: 50px;
+    }
+    #orderButton{
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-weight: bold;
         color: white;
         font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
     }
-    
+
     /*three containers aligned to navigation*/
     
     .section1_wrapper{
@@ -758,245 +664,4 @@ margin-left: 1rem;
     }
     }
 
-    
-/* LOCATIONS PAGE CSS */
 
-    /*LOCATIONS HEADER*/
-  header {
-    padding: 20px 40px 20px 40px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav {
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-  }
-
-  #navbarNav {
-    justify-content: flex-end;
-    text-align: right;
-  }
-
-  .container-fluid {
-    width: 100%;
-  }
-  
-  .navbar-brand {
-    font-size: 30px;
-  }
-  
-  .btn-bd-primary {
-    border: rgb(0, 0, 0) solid 1px;
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-  
-  .navbar-toggler {
-    --bs-navbar-toggler-focus-width: 0.00rem;
-  }
-  
- 
-    /*LOCATIONS - SEARCH BAR IMAGE AND TEXT*/
-
-.locations-dessert {
-  position: relative;
-  display: flex;
-}
-
-.locations-dessert > img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  opacity: 85%;
-}
-
-.find {
-  position: absolute;
-  top: 25%;
-  right: 38%;
-  font-size: 35px;
-  width: 23%;
-  text-align: center;
-  font-weight: 700;
-}
-
-  
-    /* LOCATIONS - SEARCH BAR */
-
-.search-container {
-  position: relative;
-}
-
-.main-search-input {
-  background: #fff;
-  padding: 0 120px 0 0;
-  border-radius: 1px;
-  margin-top: 200px;
-  box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.3);
-}
-
-.fl-wrap {
-  float: left;
-  width: 100%;
-  position: relative;
-}
-
-.main-search-input:before {
-  content: '';
-  position: absolute;
-  bottom: -40px;
-  width: 50px;
-  height: 1px;
-  background: rgba(255,255,255,0.41);
-  left: 50%;
-  margin-left: -25px;
-}
-
-.main-search-input-item {
-  float: left;
-  width: 100%;
-  box-sizing: border-box;
-  border-right: 1px solid #eee;
-  height: 50px;
-  position: relative;
-}
-
-.main-search-input-item input:first-child {
-  border-radius: 100%;
-}
-
-.main-search-input-item input {
-  float: left;
-  border: none;
-  width: 100%;
-  height: 50px;
-  padding-left: 20px;
-}
-
-.main-search-button{
-  background: #F8415B;
-}
-
-.main-search-button {
-  position: absolute;
-  right: 0px;
-  height: 50px;
-  width: 120px;
-  color: #fff;
-  top: 0;
-  border: none;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  cursor: pointer;
-}
-
-.main-search-input-wrap {
-  max-width: 600px;
-  margin: 20px auto;
-  position: absolute;
-  top: 5%;
-  right: 41%;
-}
-
-:focus {
-  outline: 0;
-}
-
-
-@media only screen and (max-width: 768px){
-
-.find {
-  position: absolute;
-  top: 17%;
-  right: 20%;
-  width: 60%;
-}
-
-.main-search-input-wrap {
-  top: 10%;
-  right: 20%;
-}
-
-.main-search-input {
-  background: rgba(255,255,255,0.2);
-  padding: 14px 20px 10px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.0);
-}
-
-.main-search-input-item {
-  width: 100%;
-  border: 1px solid #eee;
-  height: 50px;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.main-search-input-item input {
-  border-radius: 6px !important;
-  background: #fff;
-}
-
-.main-search-button {
-  position: relative;
-  float: left;
-  width: 100%;
-  border-radius: 6px;
-}
-}
-
-    /* LOCATIONS CARDS*/
-
-.country {
-  padding: 50px 90px 20px 90px;
-  justify-content: center;
-}
-
-
-.title-country {
-  padding-left: 215px;
-  padding-bottom: 15px;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  height: 230px;
-  padding: 40px;
-}
-
-.btn-primary {
-  --bs-btn-bg: #F8415B;
-  --bs-btn-border-color: #F8415B;
-  --bs-btn-hover-bg: #f8415cb2;
-  --bs-btn-hover-border-color: #F8415B;
-  margin-top: 40px;
-
-}
-
-@media only screen and (max-width: 768px) {
-  .title-country {
-    padding-left: 0px;
-  }
-}
-
-
-    /*LOCATIONS FOOTER*/
-
-footer {
-  background-color: black;
-  height: 100px;
-}
-
-.footer-nav {
-  padding-top: 30px;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  color: white;
-  gap: 35px;
-}
